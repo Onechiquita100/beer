@@ -17,39 +17,60 @@ body{
     margin: 0;
     background-color: #eeebda;
 }
+
+
+
+
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
     margin-top: 0;
 }
+
+
 img{
-    max-width: 100%;
+    max-width: 60%;
     padding: 0;
     margin: 0;
-    display: block;
+    display: flex;
+    float:right;
+    height: 200px;
+    width: 300px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
 }
-.wrapper{
-    width: 1000px;
+
+.wrapper {
+
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto;
 
     /*
-        TODO: 
+        TODO:
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
     */
 }
+
 #site-header{
-    /*
-        TODO
-        - Flexbox property here
-    */
+
+
+width:1000px;
+
+
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
+    background-image: url('header-img.jpg');
 
     /*
-        TODO: 
+        TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
@@ -70,16 +91,25 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script', serif;
     /*
-        TODO: 
+        TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
 }
+
+article footer p {
+  text-transform: uppercase;
+  align-content: center;
+}
 #main-navigation{
     background: #444;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
 
     /*
-        TODO: 
+        TODO:
         - Use Flexbox to arrange the navigation links
     */
 }
@@ -89,9 +119,10 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    align-content: space-between;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - Create general spacing between nav links
     */
 }
@@ -99,7 +130,7 @@ img{
     margin-right: 400px;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -108,8 +139,9 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 700px;
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -118,8 +150,10 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 200px;
+
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -158,37 +192,26 @@ article time{
     color: #666;
 }
 article img{
+  float:right;
     /*
-        TODO: 
+        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
+  aside:
     /*
-        TODO: 
+        TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-    
+
     background: #333;
     /*
-        TODO: 
+        TODO:
         - Style the site footer
     */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
